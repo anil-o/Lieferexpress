@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferexpress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/delivery-food-png" href="img/delivery-food.png">
+</head>
+
+<body onload="load()">
+    <script src="scirpt.js"></script>
+    <div class="menu">
+        <div class="logo-menu">
+            <img class="arrow hide-mobile" src="img/arrowback.png"></img>
+            <img class="spoonandfork hide-mobile" src="img/spoonandfork.png"></img>
+            <a href="#"><span class="lieferexpress-position size-mobile">Lieferexpress.de</span></a>
+        </div>
+
+        <div>
+            <a class="adress-menu size-mobile-adress"><b>Musterstraße 1, 20073 Musterstadt</b></a>
+        </div>
+
+        <div>
+            <img class="dynamicmenu" src="img/menu.png"></img>
+        </div>
+    </div>
+
+    <div class="mealandbasket-container">
+
+        <div id="basketleft" class="basket-left">
+            <div class="second-container">
+                <img class="second-container-img" src="img/cheeseburger.jpg">
+                <div class="icon-container-second"><img class="icon" src="img/bull.png"></div>
+            </div>
+
+            <div class="meal-container">
+                <div class="assess-container">
+                    <div class="left-side-assess">
+                        <div class="name"><b>Burger Heaven</b></div>
+                        <div class="star-assess">
+                            <img class="size-star" src="img/star.png">
+                            <img class="size-star" src="img/star.png">
+                            <img class="size-star" src="img/star.png">
+                            <img class="size-star" src="img/star.png">
+                            <img class="size-star" src="img/star.png">
+                            <a href="#">(1.3k Bewertungen)</a>
+                        </div>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon-info"><img class="icon-size" src="img/info.png"></div>
+                        <div class="icon-favorite"><img class="icon-size" src="img/favorite.png"></div>
+                    </div>
+                </div>
+
+                <div class="icon-meal-container">
+                    <img class="icon-meal" src="img/clock-regular.svg"><span class="distance-to-icon">30-55 min</span>
+                    <img class="icon-meal" src="img/bicycle.png"><span class="distance-to-icon">1.99 €</span>
+                    <img class="icon-meal" src="img/shopping.png"><span class="distance-to-icon">8.00 €</span>
+                </div>
+
+                <div class="row-strip-container">
+                    <div class="row-strip-container-child">
+                        <img class="search-icon" src="img/search.png">
+                        <a href="#favmeals"><span class="current-tab">Beliebte Gerichte</span></a>
+                        <a href="#steak">Steak</a>
+                        <a href="#burger">Burger</a>
+                        <a href="#specialburger">Special Burger</a>
+                        <a href="#ribeye">Rib eye</a>
+                        <a href="#beilage">Beilage</a>
+                        <a href="#fingerfood">Finger Food</a>
+                        <a href="#dessert">Dessert</a>
+                        <a href="#drinks">Drinks</a>
+                    </div>
+                </div>
+
+                <div class="current-tab-container">Beliebte Gerichte</div>
+
+                <div id="favmeals">
+
+                </div>
+
+                <div id="steak">
+
+                </div>
+
+            </div>
+
+            <div id="impressum" class="impressum-data">
+                <span class="data-title"><b>Impressum</b></span><br>
+                <span class="data">Anil Orhan handelt im Namen von Burger Heaven</span>
+                <span class="data">Anil Orhan</span>
+                <span class="data">Musterstraße 1</span>
+                <span class="data">20073 Musterstadt</span>
+                <span class="data">E-Mail: anil.orhan@mail.de</span>
+            </div>
+        </div>
+
+        <div id="basketright" class="basket-right hide-mobile">
+            <div class="shoppingbaskettitle">
+                <span class="shoppingbasketext"><b>Warenkorb</b></span>
+                <img id="xmark" onclick="closebasketmobile()" class="hide xclass" src="img/x-mark.png">
+            </div>
+
+            <div id="shoppingbasket">
+                <div class="shoppingbasket-child">
+                    <img src="img/shopping-bag.png" class="shopping-basket-icon">
+                    <div><span class="shopping-basket-text"><b>Fülle deinen Warenkorb</b></span></div>
+                    <div class="shopping-basket-textsmall">Füge leckere Gerichte aus der Karte hinzu und bestelle</div>
+                </div>
+            </div>
+
+            <div id="missingamount">
+
+            </div>
+
+            <div id="minimumamount">
+
+            </div>
+
+            <div id="total">
+    
+            </div>
+
+            <div id="minimumbutton">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="basket-mobile" onclick="openbasketmobile()" class="basket-mobile">
+        <span class="unsetbasket">Warenkorb</span>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-container-child">
+                <div class="formobile-footer">
+                <a href="#">Ein Restaurant empfehlen</a>
+                <a href="#">Ein Restaurant anmelden</a>
+                <a href="#">Jobs</a>
+                <a href="#">AGB</a>
+                <a href="#">Datenschutzerklärung</a>
+                <a href="#">Impressum</a>
+                <a href="#">Verwendung von Cookies</a>
+                <a href="#">Bug-Bounty</a>
+                <a href="#">Ethik-Hotline</a>
+                </div>
+            </div>
+
+            <div class="footer-container-secondchild"><img class="copyright-img" src="img/copyright.png"><span
+                    class="footer-text">2022 Lieferexpress.de</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>
